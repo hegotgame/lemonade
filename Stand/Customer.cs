@@ -6,12 +6,8 @@ using System.Threading.Tasks;
 
 namespace Stand
 {
-    class Game
+    class Customer : Market
     {
-        public decimal Play()
-        {
-            decimal money = 0;
-            return money;
-        }
+        
     }
 }

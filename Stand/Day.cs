@@ -6,12 +6,8 @@ using System.Threading.Tasks;
 
 namespace Stand
 {
-    class Game
+    class Day
     {
-        public decimal Play()
-        {
-            decimal money = 0;
-            return money;
-        }
+        public bool sellOut;
     }
 }

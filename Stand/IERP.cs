@@ -6,12 +6,7 @@ using System.Threading.Tasks;
 
 namespace Stand
 {
-    class Game
+    interface IERP
     {
-        public decimal Play()
-        {
-            decimal money = 0;
-            return money;
-        }
     }
 }

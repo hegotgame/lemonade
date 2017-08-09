@@ -10,6 +10,8 @@ namespace Stand
     {
         static void Main(string[] args)
         {
+            Game run = new Game();
+            decimal RunStand = run.Play();            
         }
     }
 }
