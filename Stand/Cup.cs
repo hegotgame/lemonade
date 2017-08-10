@@ -6,14 +6,7 @@ using System.Threading.Tasks;
 
 namespace Stand
 {
-    class Day
+    class Cup : Ingredient
     {
-        public bool sellOut;
-        public int i;
-    public int Count()
-        {
-            i++;
-            return i;
-        }
     }
 }

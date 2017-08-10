@@ -13,5 +13,16 @@ namespace Stand
             decimal money = 0;
             return money;
         }
+/* Initial UI w. .bank .receipe .inventory 
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 
+*/
     }
 }

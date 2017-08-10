@@ -12,6 +12,7 @@ namespace Stand
         protected decimal costPrice;
         protected decimal giveawayPrice;
         protected string unit;
+        public int quantity;
     protected void Expiration(int shelfLife)
         {
 
