@@ -8,30 +8,35 @@ namespace Stand
 {
     class UI
     {
-        public int supplyPrice;
-        Sugar sugar = new Sugar();
-        Lemon lemon = new Lemon();
-        Ice ice = new Ice();
-        Cup cup = new Cup();
-
-        private int[] receipe = new int[5];
-        public int[] Receipe
-        {
-            get
-            {
-                return receipe;
-            }
-            set
-            {
-                receipe[0] = supplyPrice;
-                receipe[1] = cup.quantity;
-                receipe[2] = lemon.quantity;
-                receipe[3] = sugar.quantity;
-                receipe[4] = ice.quantity;
-
-            }
-        }
-        public int[] order = new int[4];
         public bool bankrupcy;
+        Cup cup = new Cup();
+        Lemon lemon = new Lemon();
+        Sugar sugar = new Sugar();
+        Ice ice = new Ice();
+
+        private void GetOrder()
+        {
+            Console.WriteLine("Make your daily purchasing order:");
+            Console.WriteLine("How many cups?");
+            cup.orderQuantity_units = int.Parse(Console.ReadLine());
+            Console.WriteLine("How many lemons?");
+            lemon.orderQuantity_units = int.Parse(Console.ReadLine());
+            Console.WriteLine("How many cups of sugar?");
+            sugar.orderQuantity_units = int.Parse(Console.ReadLine());
+            Console.WriteLine("How many ice cubes?");
+            ice.orderQuantity_units = int.Parse(Console.ReadLine());
+        }
+        private void SetReceipe()
+        {
+            Console.WriteLine("Make your daily lemonade receipe:");
+            cup.normalization_units = 1;
+            Console.WriteLine("How many lemons in a cup?");
+            lemon.normalization_units = int.Parse(Console.ReadLine());
+            Console.WriteLine("How many cups of sugar in a cup?");
+            sugar.normalization_units = int.Parse(Console.ReadLine());
+            Console.WriteLine("How many ice cubes in a cup?");
+            ice.normalization_units = int.Parse(Console.ReadLine());
+        }
+
     }
 }

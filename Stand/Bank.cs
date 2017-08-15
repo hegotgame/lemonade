@@ -8,16 +8,31 @@ namespace Stand
 {
     class Bank
     {
-        public decimal balance = 0;
+        public decimal balance_dollars;
+        public decimal supplyPrice_dollars;
+        public decimal demandPrice_dollars;
         private decimal salesReceipt;
         private decimal wasteReceipt;
         private decimal vendorReceipt;
-        private decimal Balance()
+        Ingredient ingredient = new Ingredient();
+        Customer customer = new Customer();
+        Player player = new Player();
+
+        private decimal[] cash = new decimal[5];
+        public decimal[] Cash
         {
-            balance = 20;
-            balance -= vendorReceipt;
-            balance += salesReceipt;
-            return balance;
+            get
+            {
+                return cash;
+            }
+            set
+            {
+                cash[0] = balance_dollars;
+                cash[1] = player.supplyPrice_dollars;
+                cash[2] = ingredient.CostPrice_dollars;
+                cash[3] = ingredient.giveawayPrice_dollars;
+                cash[4] = customer.demandPrice_dollars;
+            }
         }
     }
 }

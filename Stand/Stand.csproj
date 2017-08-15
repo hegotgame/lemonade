@@ -53,12 +53,14 @@
     <Compile Include="ICRM.cs" />
     <Compile Include="IERP.cs" />
     <Compile Include="Ingredient.cs" />
+    <Compile Include="Inventoy.cs" />
     <Compile Include="Lemon.cs" />
     <Compile Include="Market.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Sugar.cs" />
     <Compile Include="UI.cs" />
+    <Compile Include="Weather.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

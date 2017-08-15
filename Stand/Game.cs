@@ -13,8 +13,8 @@ namespace Stand
             decimal money = 0;
             return money;
         }
-/* Initial UI w. .bank .receipe .inventory 
- * 
+/* Initial 'Day' w. .bank .receipe .inventory 
+ * Recursive 'RunDay' fxn, predictive stats for user
  * 
  * 
  * 
